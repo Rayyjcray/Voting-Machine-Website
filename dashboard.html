@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voting Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Live Voting Dashboard</h1>
+    <p class="sub">Tally updates when votes are submitted.</p>
+  </header>
+
+  <main class="container">
+    <div class="dash-actions">
+      <button id="refresh" class="secondary">Refresh</button>
+      <a class="link" href="index.html">Back to Voting</a>
+      <span id="status" class="status" aria-live="polite"></span>
+    </div>
+
+    <section class="tally" id="president">
+      <h2>Presidential Tally</h2>
+      <ul class="list" id="list-president"></ul>
+    </section>
+
+    <section class="tally" id="vicePresident">
+      <h2>Vice Presidential Tally</h2>
+      <ul class="list" id="list-vicePresident"></ul>
+    </section>
+
+    <section class="tally" id="treasurer">
+      <h2>Treasurer Tally</h2>
+      <ul class="list" id="list-treasurer"></ul>
+    </section>
+
+    <section class="tally" id="secretary">
+      <h2>Secretary Tally</h2>
+      <ul class="list" id="list-secretary"></ul>
+    </section>
+
+    <section class="tally" id="pio">
+      <h2>PIO Tally</h2>
+      <ul class="list" id="list-pio"></ul>
+    </section>
+
+    <div class="actions">
+      <a class="primary" href="index.html">Back to Voting Page</a>
+    </div>
+  </main>
+
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

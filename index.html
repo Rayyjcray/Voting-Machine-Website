@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Student Council Voting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>BVA Supreme Student Council Voting</h1>
+    <p class="sub">Cast your vote for each position below. One ID = one vote.</p>
+  </header>
+
+  <main class="container">
+    <form id="voteForm" novalidate>
+      <div class="field">
+        <label for="studentId">ID Number</label>
+        <input type="text" id="studentId" placeholder="example: 1234567" />
+      </div>
+
+      <section class="position">
+        <h2>President</h2>
+        <div class="options" role="group" aria-labelledby="president">
+          <input type="radio" name="president" id="pres_catherine" value="Catherine Binaya" />
+          <label class="btn-option" for="pres_catherine">Catherine Binaya</label>
+
+          <input type="radio" name="president" id="pres_steven" value="Steven Nash Placino" />
+          <label class="btn-option" for="pres_steven">Steven Nash Placino</label>
+        </div>
+      </section>
+
+      <section class="position">
+        <h2>Vice President</h2>
+        <div class="options" role="group" aria-labelledby="vicePresident">
+          <input type="radio" name="vicePresident" id="vp_angela" value="Angela Evangelista" />
+          <label class="btn-option" for="vp_angela">Angela Evangelista</label>
+
+          <input type="radio" name="vicePresident" id="vp_godwin" value="Godwin Howard Macaraan" />
+          <label class="btn-option" for="vp_godwin">Godwin Howard Macaraan</label>
+        </div>
+      </section>
+
+      <section class="position">
+        <h2>Treasurer</h2>
+        <div class="options" role="group" aria-labelledby="treasurer">
+          <input type="radio" name="treasurer" id="tre_jessan" value="Jessan Romo" />
+          <label class="btn-option" for="tre_jessan">Jessan Romo</label>
+
+          <input type="radio" name="treasurer" id="tre_nikki" value="Nikki Peras" />
+          <label class="btn-option" for="tre_nikki">Nikki Peras</label>
+        </div>
+      </section>
+
+      <section class="position">
+        <h2>Secretary</h2>
+        <div class="options" role="group" aria-labelledby="secretary">
+          <input type="radio" name="secretary" id="sec_julia" value="Julia Yuse" />
+          <label class="btn-option" for="sec_julia">Julia Yuse</label>
+
+          <input type="radio" name="secretary" id="sec_ray" value="Ray Joshua Catli" />
+          <label class="btn-option" for="sec_ray">Ray Joshua Catli</label>
+        </div>
+      </section>
+
+      <section class="position">
+        <h2>PIO</h2>
+        <div class="options" role="group" aria-labelledby="pio">
+          <input type="radio" name="pio" id="pio_jose" value="Jose Bangate" />
+          <label class="btn-option" for="pio_jose">Jose Bangate</label>
+
+          <input type="radio" name="pio" id="pio_isha" value="Isha Deapera" />
+          <label class="btn-option" for="pio_isha">Isha Deapera</label>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="submitVote" type="button" class="primary">Submit Vote</button>
+        <a class="link" href="dashboard.html">Go to Dashboard</a>
+      </div>
+
+      <p id="message" class="message" role="alert" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="voting.js"></script>
+</body>
+</html>
